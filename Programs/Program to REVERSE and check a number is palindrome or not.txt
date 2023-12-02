@@ -1,0 +1,35 @@
+//Reversing of a number
+
+#include<stdio.h>
+
+int main()
+
+{ int r,n,temp,sum=0;
+   printf("Enter the given number:\n");
+    scanf(" %d",&n);
+    temp=n;
+    while(n>0)
+   {
+       r=n%10;
+       sum=(sum*10)+r;
+       n=n/10;
+   }
+   printf("%d\n",sum);  
+     
+
+   return 0;
+}
+ 
+//To check a number is PALINDROME or NOT
+//Palindrome number: A palindrome number is a number that is same after reverse.
+//For example 121, 34543, 343, 131, 48984 are the palindrome numbers.
+
+//After printing the sum write the following conditions.
+
+if (sum==temp)
+{ printf("The given number is a PALINDROME");
+}
+else
+{ printf("The given number is NOT a PALINDROME");
+}
+
